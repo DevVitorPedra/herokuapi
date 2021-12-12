@@ -1,4 +1,5 @@
 const express = require('express')
+const CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
 const app = express()
 app.use(express.json())
 app.listen(5000,()=>console.log('rodando na 5000'))
